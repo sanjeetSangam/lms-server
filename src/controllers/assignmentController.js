@@ -23,7 +23,6 @@ module.exports.uploadAssignments = async (req, res) => {
 module.exports.getOneAssign = async (req, res) => {
   try {
     let id = req.params.id;
-    console.log(id);
     let assignment = await Assignment.findById(id).lean().exec();
     res.send(assignment).status(201);
   } catch (error) {
