@@ -5,7 +5,7 @@ const {
 
 const router = require("express").Router();
 
-router.get("/lectures", getLectures);
+router.get("", getLectures);
 router.post("/postlectures", uploadLectures);
 
 module.exports = router;
