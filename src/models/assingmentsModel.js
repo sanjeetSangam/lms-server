@@ -8,12 +8,7 @@ const assignmentModel = mongoose.Schema(
     time: { type: String, required: true },
     assignmentType: { type: String, required: true },
     problemType: { type: String, required: true },
-    assignmentProblems: [
-      {
-        problemTitle: { type: String, required: true },
-        content: { type: String, required: true },
-      },
-    ],
+    assignmentProblems: [{ type: String, required: true }],
   },
   {
     timestamps: true,
